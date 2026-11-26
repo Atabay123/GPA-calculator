@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script defer src="script.js"></script>
+	<title>Weighted GPA Calculator</title>
+</head>
+
+<body>
+	<main class="app-wrapper">
+		<div class="subjects-container">
+			<header class="card-header">
+				<div>
+					<h1>Weighted GPA Calculator</h1>
+					<p class="subtitle">Enter your grades (1–10) to see each course's credit weight</p>
+				</div>
+				<span class="credits-badge">30.5 Total Credits</span>
+			</header>
+
+			<div class="table-head">
+				<span>Subject</span>
+				<span>Grade</span>
+				<span>Action</span>
+				<span>Weight</span>
+			</div>
+
+			<ul class="subjects-list" id="subjectsList"></ul>
+
+			<footer class="card-footer">
+				<button type="button" id="resetBtn" class="reset-btn">Reset All</button>
+				<div class="gpa-box">
+					<span class="gpa-label">Final Weighted GPA</span>
+					<p id="finalGpa">0.00</p>
+				</div>
+			</footer>
+		</div>
+	</main>
+</body>
+
+</html>
